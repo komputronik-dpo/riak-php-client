@@ -20,7 +20,7 @@ class Response extends \Basho\Riak\Command\Response
 
     protected $modified = '';
 
-    public function __construct($success = true, $code = 0, $message = '', Bucket $bucket = null, $modified = '')
+    public function __construct($success = true, $code = 0, $message = '', ?Bucket $bucket = null, $modified = '')
     {
         parent::__construct($success, $code, $message);
 

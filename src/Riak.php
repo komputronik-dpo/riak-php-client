@@ -91,7 +91,7 @@ class Riak
      *
      * @throws Exception
      */
-    public function __construct(array $nodes, array $config = [], Api $api = NULL)
+    public function __construct(array $nodes, array $config = [], ?Api $api = NULL)
     {
         // wash any custom keys if any
         $this->nodes = array_values($nodes);
